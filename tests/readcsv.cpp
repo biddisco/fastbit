@@ -47,7 +47,7 @@
 #include <string.h>	// strlen
 #include <ctype.h>	// isdigit
 #include <time.h>	// time
-#include <unistd.h>	// chdir
+//#include <unistd.h>	// chdir
 #if defined(__CYGWIN__)
 #include <sys/stat.h>	// mkdir
 #elif defined(__HOS_AIX__)

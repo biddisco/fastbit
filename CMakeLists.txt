@@ -36,6 +36,13 @@ find_package(Threads REQUIRED)
 message("CMAKE_THREAD_LIBS_INIT is ${CMAKE_THREAD_LIBS_INIT}")
 include_directories(${THREADS_PTHREADS_INCLUDE_DIR})
 
+add_definitions(
+  -DWITHOUT_FASTBIT_CONFIG_H
+  -DFASTBIT_MAX_WAIT_TIME=10
+  -DFASTBIT_USE_LONG_OFFSETS
+  -DWAH_CHECK_SIZE
+  )
+
 #-----------------------------------------------------------------------------
 # subdirs
 #-----------------------------------------------------------------------------

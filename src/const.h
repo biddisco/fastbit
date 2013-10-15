@@ -89,7 +89,7 @@
 #    define HAVE_VPRINTF 1
 #    define HAVE_DIRENT_H 1
 #  endif
-#  if !defined(_MSC_VER)
+#  if defined(_MSC_VER) && _MSC_VER>=1700
 #    include <stdint.h>
 #  endif
 #endif

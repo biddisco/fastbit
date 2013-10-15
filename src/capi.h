@@ -35,6 +35,8 @@ HREF="http://crd.lbl.gov/~kewu/fastbit/doc/html/tcapi_8c.html">examples/tcapi.c<
 #  include <inttypes.h>
 #elif defined(HAVE_STDINT_H) || defined(__unix__) || defined(__APPLE__)
 #  include <stdint.h>
+#elif defined(_MSC_VER) && (_MSC_VER>=1700)
+#  include <stdint.h>
 #elif defined(_WIN32) && defined(_MSC_VER)
 /* MS windows has its own exact-width types, use them */
 #  ifndef int16_t
